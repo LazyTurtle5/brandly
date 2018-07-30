@@ -11,50 +11,58 @@
 
     <!-- Navigation -->
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">Brandly</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Brands</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    
 
     <!-- Jumbotron -->
 
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid image overlay">
+	    <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+	      <div class="container">
+	      	<a class="navbar-brand" href="#"><span class="logo">Brand</span><span class="logo-2">ly</span></a>
+	      
+		      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		        <span class="navbar-toggler-icon"></span>
+		      </button>
+		      <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarNav">
+		        <ul class="navbar-nav">
+		          <li class="nav-item active px-2">
+		            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		          </li>
+		          <li class="nav-item px-2">
+		            <a class="nav-link" href="#">Shop</a>
+		          </li>
+		          <li class="nav-item px-2">
+		            <a class="nav-link" href="#">Brands</a>
+		          </li>
+		          <li class="nav-item px-2">
+		            <a class="nav-link" href="#">Blog</a>
+		          </li>
+		          <li class="nav-item px-2">
+		            <a class="nav-link" href="#">About</a>
+		          </li>
+		          <li class="nav-item px-2">
+		            <a class="nav-link" href="#">Contact</a>
+		          </li>
+		        </ul>
+		      </div>
+	     </div>
+	    </nav>
     	<div class="container">
-     		<h4 class="">Spring / Summer Collection</h4>
-        	<h1 class="">Up to 60% discount on new arrivals</h1>
-        	<p class="lead">Trending new items, from creators around the world</p>
-        	<a class="btn btn-primary" href="#" role="button">Link</a>
+    		<div class="ad">
+	     		<h4 class="collection py-2">Spring / Summer Collection</h4>
+	        	<h1 class="arrivals py-2">Up to 60% discount on new arrivals</h1>
+	        	<p class="lead py-2">Trending new items, from creators around the world</p>
+	        	<a class="btn btn-custom" href="#" role="button">Shop Now</a>
+	        </div>
       	</div>
     </div>
 
     <!-- Latest Products -->
 
     <div class="container">
-        <h1>Latest Products</h1>
+    	<hr>
+        <h1 class="sub-header">Latest Products</h1>
+        <hr>
         <div class="row">
             <div class="col-sm-4">
                 <img src="img/men.png" alt="Men">
@@ -84,7 +92,9 @@
     <!-- Trending -->
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    	<h1>Trending</h1>
+    	<hr>
+    	<h1 class="sub-header">Trending</h1>
+    	<hr>
 	  	<ol class="carousel-indicators">
 	    	<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 	    	<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -187,7 +197,9 @@
 	<!-- From the blog -->
 
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-		<h1>From The Blog</h1>
+		<hr>
+		<h1 class="sub-header">From The Blog</h1>
+		<hr>
 		<div class="carousel-inner">
 	    	<div class="carousel-item active">
 	      		<div class="container">
