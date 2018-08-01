@@ -2,6 +2,8 @@ $color-primary: #666666; //grey
 $color-secondary: #dc0000; //red
 $color-plain: #fff; //white
 
+// General ---------------------------/
+
 .btn-custom {
 	border: 2px solid $color-plain;
 	width: 150px;
@@ -12,6 +14,21 @@ $color-plain: #fff; //white
 	background-color: $color-plain;
 	color: $color-secondary;
 	}
+}
+
+hr.style1 {
+	border-top: 3px solid rgba(255,0,0,1);
+	width: 100px;
+}
+
+.sub-header {
+	color: $color-primary;
+	text-align: center;
+	font-size: 40px;
+}
+
+img {
+	width: 100%;
 }
 
 
@@ -37,10 +54,9 @@ $color-plain: #fff; //white
 
 
 
-// Jumbotron ---------------------------/
+// Advert ---------------------------/
 
 .jumbotron {
-	
 	height: 700px;
 	padding: 0;
 	text-align: center;
@@ -54,15 +70,15 @@ $color-plain: #fff; //white
 }
 
 .overlay:before{
-  position: absolute;
-  content:" ";
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  display: block;
-  z-index:0;
-  background-color: rgba(0,0,0,0.5);
+  	position: absolute;
+  	content:" ";
+  	top:0;
+ 	left:0;
+ 	width:100%;
+ 	height:100%;
+ 	display: block;
+ 	z-index:0;
+ 	background-color: rgba(0,0,0,0.5);
 }
 
 .ad {
@@ -91,6 +107,34 @@ $color-plain: #fff; //white
 }
 
 
+//  Latest Products ---------------------------/
+
+.card {
+	display: flex;
+}
+
+.card-img-overlay {
+	background-color: black;
+	display: flex;
+    opacity: .7;
+    position: absolute;
+   	justify-content: center;
+	align-items: center;
+}
+
+.border {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	border: 1px solid #fff !important;
+}
+
+.card-title {
+	font-size: 34px;
+}
 
 
 
