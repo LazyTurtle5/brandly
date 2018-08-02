@@ -1,5 +1,6 @@
 $color-primary: #666666; //grey
 $color-secondary: #dc0000; //red
+$color-font: #7f7f7f; // lighter grey
 $color-plain: #fff; //white
 
 // General ---------------------------/
@@ -137,17 +138,100 @@ img {
 }
 
 
+//  Offers ---------------------------/
+
+.offers,
+.sale  {
+	display: flex;
+}
+
+.sale {
+	flex-direction: column;
+	text-align: center;
+	&-title {
+		width: 70%;
+	}
+}
+
+.autumn {
+	font-size: 2.5em;
+	padding: 2%;
+}
+
+.mega {
+	text-transform: uppercase;
+}
+
+
+.row {
+	margin: 5% 0;
+}
+
+hr.style2 {
+	border: 1px solid #fff;
+	width: 100px;
+}
 
 
 
+//  Trending ---------------------------/
 
 
+.trend {
+	background: url('../img/background.png');
+}
 
+.carousel-content {
+	padding: 1% 0;
+}
 
+.trending_content {
+	h4 {
+		color: red;
+		text-transform: uppercase;
+		padding: 3% 0;
+	}
+	h5 {
+		font-size: 1em;
+		letter-spacing: 1px;
+		color: $color-font;
+		padding: 3% 0;
+	}
+	p {
+		color: $color-font;
+		letter-spacing: 1px;
+		padding: 3% 0;
+	}
+}
 
+hr.style3 {
+	border: 1px solid black;
+	width: 25px;
+	margin-left: 0;
+}
 
+.btn-secondary {
+	background-color: $color-plain;
+	color: $color-primary;
+	margin: 10px 20px 10px 0;
+    width: 60px;
+    &:focus {
+    	background-color: $color-primary;
+    	color: $color-plain;
+    }
+}
 
-
+.btn-custom2 {
+	background-color: $color-plain;
+	color: $color-primary;
+	margin: 10px 0;
+    width: 147px;
+    border: 1px solid #6c757d;
+    &:hover {
+    	background-color: $color-primary;
+    	color: $color-plain;
+    }
+}
 
 
 
