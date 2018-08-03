@@ -3,23 +3,92 @@ $color-secondary: #dc0000; //red
 $color-font: #7f7f7f; // lighter grey
 $color-plain: #fff; //white
 
-// General ---------------------------/
 
-.btn-custom {
-	border: 2px solid $color-plain;
-	width: 150px;
+// mixins ---------------------------/
+
+@mixin ad {
 	text-transform: uppercase;
-	font-size: 15px;
 	color: $color-plain;
-	&:hover {
-	background-color: $color-plain;
-	color: $color-secondary;
-	}
 }
 
-hr.style1 {
-	border-top: 3px solid rgba(255,0,0,1);
+@mixin red-title {
+	color: red;
+	text-transform: uppercase;
+	padding: 3% 0;
+}
+
+@mixin trending {
+	color: $color-font;
+	letter-spacing: 1px;
+	padding: 3% 0;
+}
+
+// buttons ---------------------------/
+
+.btn {
+	background-color: $color-plain;
+	color: $color-primary;
+	border-radius: 0;
+	&-custom {
+		background-color: transparent;
+		border: 2px solid $color-plain;
+		width: 150px;
+		text-transform: uppercase;
+		font-size: 15px;
+		color: $color-plain;
+		&:hover {
+			background-color: $color-plain;
+			color: $color-secondary;
+		}
+	}
+	&-custom2 {
+		margin: 10px 0;
+	    width: 147px;
+	    border: 1px solid #6c757d;
+	    text-transform: uppercase;
+	    &:hover {
+	    	background-color: $color-primary;
+	    	color: $color-plain;
+	    }
+	}
+	&-custom3 {
+		margin: 10px 0;
+	    width: 250px;
+	    border: 1px solid #6c757d;
+	    text-transform: uppercase;
+	    &:hover {
+	    	background-color: $color-primary;
+	    	color: $color-plain;
+	    }
+	}
+	&-secondary {
+		margin: 10px 20px 10px 0;
+    	width: 60px;
+    	&:focus {
+    		background-color: $color-primary;
+    		color: $color-plain;
+    	}
+    }
+}
+
+// General ---------------------------/
+
+hr {
 	width: 100px;
+	&.style1 {
+		border-top: 3px solid rgba(255,0,0,1);
+	}
+	&.style2 {
+		border: 1px solid #fff;
+	}
+	&.style3 {
+		border: 1px solid black;
+		width: 25px;
+		margin-left: 0;
+	}
+	&.style4 {
+		width: 100%;
+	}
 }
 
 .sub-header {
@@ -35,18 +104,13 @@ img {
 
 // Navigation ---------------------------/
 
-.logo, 
-.logo-2 {
-	color: $color-secondary;
-	text-transform: uppercase;
-}
-
 .logo {
 	font-size:28px;
-}
-
-.logo-2 {
-	font-size: 20px;
+	color: $color-secondary;
+	text-transform: uppercase;
+	&-2 {
+		font-size: 20px;
+	}
 }
 
 .navbar li a {
@@ -89,22 +153,19 @@ img {
 }
 
 .collection {
+	@include ad;
 	font-size: 20px;
-	text-transform: uppercase;
 	letter-spacing: .45em;
-	color: $color-plain;
 }
 
 .arrivals {
+	@include ad;
 	font-size: 50px;
-	text-transform: uppercase;
-	color: $color-plain;
 }
 
 .lead {
+	@include ad;
 	font-size: 20px;
-	text-transform: uppercase;
-	color: $color-plain;
 }
 
 
@@ -167,13 +228,6 @@ img {
 	margin: 5% 0;
 }
 
-hr.style2 {
-	border: 1px solid #fff;
-	width: 100px;
-}
-
-
-
 //  Trending ---------------------------/
 
 
@@ -187,53 +241,53 @@ hr.style2 {
 
 .trending_content {
 	h4 {
-		color: red;
-		text-transform: uppercase;
-		padding: 3% 0;
+		@include red-title;
 	}
 	h5 {
 		font-size: 1em;
-		letter-spacing: 1px;
-		color: $color-font;
-		padding: 3% 0;
+		@include trending;
 	}
 	p {
-		color: $color-font;
-		letter-spacing: 1px;
-		padding: 3% 0;
+		@include trending;
 	}
 }
 
-hr.style3 {
-	border: 1px solid black;
-	width: 25px;
-	margin-left: 0;
-}
 
-.btn-secondary {
-	background-color: $color-plain;
-	color: $color-primary;
-	margin: 10px 20px 10px 0;
-    width: 60px;
-    &:focus {
-    	background-color: $color-primary;
-    	color: $color-plain;
-    }
-}
+//  blog ---------------------------/
 
-.btn-custom2 {
-	background-color: $color-plain;
-	color: $color-primary;
-	margin: 10px 0;
-    width: 147px;
-    border: 1px solid #6c757d;
-    &:hover {
-    	background-color: $color-primary;
-    	color: $color-plain;
-    }
+.blog {
+	h3 {
+		@include red-title;
+	}
+	span {
+		color: $color-primary;
+	}
+	p {
+		color: #949494;
+		letter-spacing: 0.5px;
+	}
 }
 
 
+//  subscribe ---------------------------/
+
+.subscribe {
+	background: url('../img/subscribe.png') no-repeat;
+	height: 250px;
+	display: flex;
+	align-items: center;
+	h5 {
+		color: $color-plain;
+		text-transform: uppercase;
+		padding: 10px 0;
+	}
+}
+
+input {
+	background-color: transparent;
+	width: 70%;
+	padding: .2rem .75rem .375rem .75rem;
+}
 
 
 
