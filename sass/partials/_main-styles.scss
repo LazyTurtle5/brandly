@@ -1,0 +1,300 @@
+
+// General ---------------------------/
+
+hr {
+	width: 100px;
+	&.style1 {
+		border-top: 3px solid rgba(255,0,0,1);
+	}
+	&.style2 {
+		border: 1px solid #fff;
+	}
+	&.style3 {
+		border: 1px solid black;
+		width: 25px;
+		margin-left: 0;
+	}
+	&.style4 {
+		width: 100%;
+		margin: 5% 0;
+	}
+}
+
+img {
+	width: 100%;
+}
+
+.sub-header {
+	color: $color-primary;
+	text-align: center;
+	font-size: 40px;
+}
+
+// Navigation ---------------------------/
+
+.logo {
+	font-size:28px;
+	color: $color-secondary;
+	text-transform: uppercase;
+	&-2 {
+		font-size: 20px;
+	}
+}
+
+.navbar li a {
+	color: $color-plain;
+}
+
+@media (max-width: $break-m) {
+
+	.navbar-nav {
+		background-color: $color-primary;
+		position: relative;
+		width: 100%;
+	  	z-index: 1;
+	}
+}
+
+@media (max-width: $break-m) {
+	.navbar-light {
+		background-color: $color-primary;
+	}
+}
+
+
+
+// Advert ---------------------------/
+
+.jumbotron {
+	height: 700px;
+	padding: 0;
+	text-align: center;
+}
+
+.image {
+	background-image: url('../img/slider-bg.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.overlay:before{
+  	position: absolute;
+  	content:" ";
+  	top:0;
+ 	left:0;
+ 	width:100%;
+ 	height:700px;
+ 	display: block;
+ 	z-index:0;
+ 	background-color: rgba(0,0,0,0.5);
+}
+
+.ad {
+	height: 600px;
+	padding: 18% 0;
+	position: relative;
+}
+
+.collection {
+	@include ad;
+	font-size: 1.25em;
+	letter-spacing: .45em;
+}
+
+.arrivals {
+	@include ad;
+	font-size: 3.75em;
+}
+
+.lead {
+	@include ad;
+	font-size: 1.25em;
+}
+
+
+//  Latest Products ---------------------------/
+
+.card {
+	display: flex;
+	@media (max-width: $break-m) {
+		margin: 5% 0;
+	}
+}
+
+.card-img-overlay {
+	background-color: black;
+	display: flex;
+    opacity: .7;
+    position: absolute;
+   	justify-content: center;
+	align-items: center;
+}
+
+.border {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	border: 1px solid #fff !important;
+}
+
+.card-title {
+	font-size: 225%;
+	@media (max-width: $break-m) {
+		font-size: 300%;
+	}
+}
+
+
+//  Offers ---------------------------/
+
+.offers,
+.sale  {
+	display: flex;
+}
+
+.sale {
+	flex-direction: column;
+	text-align: center;
+	&-title {
+		width: 70%;
+	}
+}
+
+.autumn {
+	font-size: 200%;
+	padding: 2%;
+}
+
+.mega {
+	text-transform: uppercase;
+	font-size: 150%;
+	@media (min-width: $break-xl) {
+		font-size: 185%;
+	}
+}
+
+@media (max-width: $break-m) {
+	.sale-title,
+	.autumn {
+		font-size: 150%;
+	}
+}
+
+
+.row {
+	margin: 5% 0;
+}
+
+//  Trending ---------------------------/
+
+
+.trend {
+	background: url('../img/background.png');
+}
+
+.carousel-content {
+	padding: 1% 0;
+}
+
+.trending_content {
+	h4 {
+		@include red-title;
+	}
+	h5 {
+		font-size: 1em;
+		@include trending;
+		@media (max-width: $break-m) {
+			padding: 1.5%;
+		}
+	}
+	p {
+		@include trending;
+		@media (max-width: $break-m) {
+			padding: 1.5%;
+		}
+	}
+}
+
+
+//  blog ---------------------------/
+
+.blog {
+	@media (max-width: $break-m) {
+		padding: 5% 0;
+	}
+	h3 {
+		@include red-title;
+	}
+	span {
+		color: $color-primary;
+	}
+	p {
+		color: #949494;
+		letter-spacing: 0.5px;
+	}
+}
+
+
+//  subscribe ---------------------------/
+
+.subscribe {
+	background: url('../img/subscribe.png') no-repeat;
+	height: 250px;
+	display: flex;
+	align-items: center;
+	h5 {
+		color: $color-plain;
+		text-transform: uppercase;
+		padding: 10px 0;
+	}
+}
+
+@media (max-width: $break-m) {
+	.sub-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+input {
+	background-color: transparent;
+	width: 70%;
+	padding: .2rem .75rem .375rem .75rem;
+	@media (max-width: $break-m) {
+		margin-top: 5%;
+	}
+}
+
+
+//  media queries ---------------------------/
+
+
+// Medium devices (tablets, 768px)
+@media (max-width: $break-m) {
+	.btn-custom2 {
+		margin-bottom: 10%;
+	}
+
+	.btn-custom3 {
+		width: 70%;
+		margin: 5% 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

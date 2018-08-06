@@ -1,0 +1,19 @@
+
+// mixins ---------------------------/
+
+@mixin ad {
+	text-transform: uppercase;
+	color: $color-plain;
+}
+
+@mixin red-title {
+	color: red;
+	text-transform: uppercase;
+	padding: 3% 0;
+}
+
+@mixin trending {
+	color: $color-font;
+	letter-spacing: 1px;
+	padding: 3% 0;
+}
